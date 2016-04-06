@@ -15,30 +15,37 @@
 }
 
 /*layout*/
+#header, #nav, .content {
+    width:960px;
+    margin: 0 auto;/*居中显示*/
+}
+#search, .section, .side_section, .ad_border, #footer {
+    border:1px solid #dbdbdb;
+    border-radius: 6px;
+}
+.section, .options, .main_ad, .side_section, .side_ad, .ad_border {
+    margin-bottom: 10px;
+}
 
+
+body{
+    margin-bottom: 30px;
+}
 #header{
     height:30px;
-    width:960px;
-    margin: 0 auto;
     border-radius: 0 0 6px 6px;
 }
 #nav{
-    width: 960px;
     height:100px;
-    margin:0 auto;
     background: #FFC;
 }
 #search{
     width: 958px;
     height: 114px;
     margin: 0 auto 10px;
-    border:1px solid #dbdbdb;
-    border-radius: 6px;
 }
 #search .bar{}
 .content{
-    width:960px;
-    margin: 0 auto;
 }
 .main{
     width: 710px;
@@ -47,20 +54,42 @@
     width: 318px;
     height: 200px;
     padding:0 15px;
-    border:1px solid #dbdbdb;
-    border-radius: 6px;
-    margin-bottom: 10px;
 }
 .options{
     width:350px;height: 200px;background: #ff9;
 }
 .main_ad{
-    margin-bottom: 10px;
-    overflow: hidden;
+    overflow: hidden;/*设置图片的圆角*/
     border-radius: 6px;
 }
 .side{
     width:240px;
+    overflow: hidden;
+    border-radius: 6px;
 }
-.side_section{}
-.side_ad{}
+.side_section{
+    height: 60px;
+    padding:0 12px;
+}
+.side_ad{
+    overflow: hidden;/*设置图片的圆角*/
+    border-radius: 6px;
+}
+
+.ad_border{
+    width: 238px;
+    height: 88px;
+    border:1px solid #dbdbdb;
+    border-radius: 6px;
+    overflow: hidden;}
+
+#footer{
+    width: 958px;
+    height: 78px;
+    margin: 0 auto;}
+
+
+.options .nav{}
+.options .nav li{}
+.options .nav .active{}
+.options .con{}
