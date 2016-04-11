@@ -1,3 +1,16 @@
+
+/* reset */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; }
+img { border:none; vertical-align:top; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+body { font-size:12px; font-family:"微软雅黑"; }
+/* end reset */
+
 /*public*/
 .fl{
     float: left;
@@ -32,12 +45,12 @@ body{
     margin-bottom: 30px;
 }
 #header{
-    height:30px;
     border-radius: 0 0 6px 6px;
+    height:30px;
 }
 #nav{
     height:100px;
-    background: #FFC;
+    position: relative;
 }
 #search{
     width: 958px;
@@ -56,7 +69,8 @@ body{
     padding:0 15px;
 }
 .options{
-    width:350px;height: 200px;background: #ff9;
+    width:350px;height: 200px;
+    position: relative;
 }
 .main_ad{
     overflow: hidden;/*设置图片的圆角*/
@@ -89,7 +103,94 @@ body{
     margin: 0 auto;}
 
 
-.options .nav{}
-.options .nav li{}
-.options .nav .active{}
-.options .con{}
+.options .nav{
+    height: 34px;
+    position: relative;
+    z-index: 2;
+}
+.options .nav li{
+    width: 172px;
+    height:33px;
+    border:1px solid #dbdbdb;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    background: #FFF;
+}
+.options .nav .active{
+    width: 172px;
+    height: 34px;
+}
+.options .con{
+    width:348px;
+    height:100px;
+    border:1px solid #dbdbdb;
+    border-radius: 0 0 6px 6px;
+    position: absolute;top:34px;left: 0;
+    z-index: 1;
+}
+
+
+
+#header .city{
+    padding: 5px 0 0 20px;
+    float: left;
+}
+#header .city a{
+    display: inline-block;
+    padding:0 7px;
+    height:18px;
+    line-height: 18px;background: white;
+    border:1px solid #e5e5e5;
+    border-radius: 4px;
+    box-shadow: 1px 1px 0 #ededed;
+}
+#header .city .active, #header .city .active:hover{color: #d60d03;background: white}
+#header .city a:hover{background: #f1f1f1}
+#header .link{
+    float: right;
+    line-height: 30px;
+    padding-right: 30px;
+    color: #d5d5d5;
+    word-spacing: 4px;
+}
+#header .link a{
+    color: #666;
+    background: url("img/header_link_bg.gif") no-repeat 0 3px;
+    padding-left: 20px;
+}
+#header .link a:hover{
+    text-decoration: underline;
+}
+#header .link .ico1{background-position: 0 0}
+#header .link .ico2{background-position: 0 -27px}
+
+#nav ul{position: absolute;top: 10px}
+#nav li{float: left;}
+#nav li a{display: block; width: 66px; padding-top: 50px;text-align: center;background: url(img/nav_bg.png) no-repeat; color: #333}
+#nav li a:hover{text-decoration: underline}
+
+#nav .bg1{background-position: 0 0}
+#nav .bg2{background-position: -66px 0}
+#nav .bg3{background-position: -132px 0}
+#nav .bg4{background-position: -198px 0}
+#nav .bg5{background-position: -264px 0}
+#nav .bg6{background-position: -330px 0}
+#nav .bg7{background-position: -396px 0}
+#nav .bg8{background-position: -462px 0}
+#nav .bg9{background-position: -528px 0}
+#nav .bg10{background-position: -594px 0}
+
+#nav .bg1:hover{background-position: 0 -70px}
+#nav .bg2:hover{background-position: -66px -70px}
+#nav .bg3:hover{background-position: -132px -70px}
+#nav .bg4:hover{background-position: -198px -70px}
+#nav .bg5:hover{background-position: -264px -70px}
+#nav .bg6:hover{background-position: -330px -70px}
+#nav .bg7:hover{background-position: -396px -70px}
+#nav .bg8:hover{background-position: -462px -70px}
+#nav .bg9:hover{background-position: -528px -70px}
+#nav .bg10:hover{background-position: -594px -70px}
+
+#nav .nav_1{left: 11px}
+#nav .nav_2{right: 11px}
+#nav h1{width: 223px;height: 62px;margin: 0 auto;position: relative;top: 10px}
